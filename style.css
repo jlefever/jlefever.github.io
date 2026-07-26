@@ -1,0 +1,240 @@
+/* Single accent color, thin rules, no shadows/gradients/cards. */
+
+:root {
+    --bg: #fbf8f2;
+    --text: #2b241d;
+    --muted: #6b5f52;
+    --accent: #8a3b24;
+    --rule: #ddd2c0;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: #1c1a17;
+        --text: #ece4d8;
+        --muted: #ab9d8c;
+        --accent: #e08a63;
+        --rule: #3a352c;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0 1.25rem;
+    background: var(--bg);
+    color: var(--text);
+    font-family: Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
+    line-height: 1.6;
+}
+
+header,
+main,
+footer {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header {
+    padding: 3rem 0 1.5rem;
+    border-bottom: 1px solid var(--rule);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.1rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+}
+
+.tagline {
+    margin: 0.35rem 0 0;
+    color: var(--muted);
+    font-style: italic;
+}
+
+
+h2 {
+    margin: 2.5rem 0 1rem;
+    font-size: 1.3rem;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--muted);
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 0.35rem;
+}
+
+section:first-of-type h2 {
+    margin-top: 1.5rem;
+}
+
+h3 {
+    margin: 1.5rem 0 0.5rem;
+    font-size: 1.05rem;
+    color: var(--accent);
+}
+
+a {
+    color: var(--accent);
+    text-decoration: underline;
+    text-decoration-color: var(--rule);
+    text-underline-offset: 2px;
+}
+
+a:hover {
+    text-decoration-color: currentColor;
+}
+
+#about {
+    overflow: auto;
+}
+
+#about p {
+    hyphens: auto;
+    text-wrap: pretty;
+}
+
+@media (max-width: 699px) {
+    #about p {
+        hyphens: none;
+    }
+}
+
+#about figure {
+    margin: 0 0 1rem;
+}
+
+.headshot {
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 2px;
+    display: block;
+    margin: 0 auto;
+}
+
+@media (min-width: 700px) {
+    #about figure {
+        float: right;
+        margin: 0 0 1rem 1.5rem;
+    }
+
+    .headshot {
+        margin: 0;
+    }
+}
+
+/* Publication style is a deliberate choice: traditional single-paragraph citation lines
+   (authors, italic linked title, venue, year). */
+.pubs {
+    margin: 0 0 0.5rem;
+    padding-left: 1.25rem;
+}
+
+.pubs li {
+    margin-bottom: 0.75rem;
+    padding-left: 0.25rem;
+    hyphens: auto;
+    text-wrap: pretty;
+}
+
+.pubs i {
+    font-style: italic;
+}
+
+/* [PDF]/[Bibtex] must never wrap onto their own line alone. .pub-links groups them as one
+   nowrap unit; for entries with only [Bibtex] (no [PDF]), the HTML uses &nbsp; before
+   <details> instead, since there's no second link to group it with. */
+.pub-links {
+    white-space: nowrap;
+}
+
+.bibtex {
+    display: inline;
+    white-space: nowrap;
+}
+
+.bibtex summary {
+    display: inline;
+    cursor: pointer;
+    color: var(--accent);
+    text-decoration: underline;
+    text-decoration-color: var(--rule);
+    text-underline-offset: 2px;
+    list-style: none;
+}
+
+.bibtex summary::-webkit-details-marker {
+    display: none;
+}
+
+.bibtex summary:hover {
+    text-decoration-color: currentColor;
+}
+
+.bibtex pre {
+    margin: 0.5rem 0 0;
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    font-size: 0.8rem;
+    line-height: 1.45;
+    background: var(--bg);
+    border: 1px solid var(--rule);
+    border-radius: 3px;
+    color: var(--text);
+    white-space: pre;
+}
+
+footer {
+    margin-top: 3rem;
+    padding: 1.5rem 0 3rem;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.icon-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+@media (min-width: 500px) {
+    .icon-links {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 1.5rem;
+    }
+}
+
+.icon-links a {
+    color: var(--text);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.icon-links a svg {
+    color: var(--muted);
+}
+
+.icon-links a:hover {
+    color: var(--accent);
+}
+
+.icon-links a:hover svg {
+    color: var(--accent);
+}

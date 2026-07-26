@@ -6,71 +6,215 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Jason Lefever</title>
-    <link rel="stylesheet" href="awsm/awsm_theme_pearl-lusta.min.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
         <h1>Jason Lefever</h1>
-        <p>Researcher / Software Developer</p>
+        <p class="tagline">Researcher / Software Engineer</p>
     </header>
     <main>
         <article>
-            <section>
+            <section id="about">
                 <h2>About Me</h2>
-                <figure><img src="headshot.jpg" style="max-width: 300px" alt="Headshot"></figure>
-                <p>I am a PhD candidate at Drexel University, advised by <a target="_blank" href="https://www.cs.drexel.edu/~yc349/">Dr. Yuanfang Cai</a> and co-advised by <a target="_blank" href="https://shidler.hawaii.edu/itm/directory/rick-kazman">Dr. Rick Kazman</a>. My research focuses on language model-assisted software refactoring and design comprehension, and my broader interests and experience span machine learning, full-stack web development, systems programming, and formal methods.</p>
+                <figure><img src="yellowstone.jpeg" class="headshot" alt="Headshot"></figure>
+                <p>I am a computer science researcher and software engineer with roughly ten years of experience across both. At <a target="_blank" href="https://sig.com">Susquehanna</a> (SIG), I work as a quantitative developer building trading strategies and tools.</p>
+                <p>Before that, I completed my PhD at <a target="_blank" href="https://drexel.edu">Drexel University</a>, advised by <a target="_blank" href="https://www.cs.drexel.edu/~yc349/">Dr. Yuanfang Cai</a> and co-advised by <a target="_blank" href="https://shidler.hawaii.edu/itm/directory/rick-kazman">Dr. Rick Kazman</a>. My research focused on custom LLM-derived embeddings that automatically recover the responsibilities and design concerns needed to guide software refactoring. My broader interests include machine learning, web development, systems programming, and formal methods.</p>
+                <p>During my PhD, I completed research internships at <a target="_blank" href="https://www.amazon.science">AWS</a> with <a target="_blank" href="https://www.martinschaef.de/">Dr. Martin Schäf</a>, and at <a target="_blank" href="https://www.nec-labs.com">NEC Labs</a> with <a target="_blank" href="https://litingfeng.github.io/">Dr. Tingfeng Li</a>. Before that, I worked as a software engineer at <a target="_blank" href="https://www.webstaurantstore.com">WebstaurantStore</a> with <a target="_blank" href="https://cloakanddagger.agency/about">Bill Blaettler</a>.</p>
             </section>
-            <section>
+            <section id="links">
                 <h2>Links</h2>
-                <ul>
-                    <li><a target="_blank" href="https://github.com/jlefever">GitHub</a></li>
-                    <li><a target="_blank" href="https://www.linkedin.com/in/jason-lefever/">LinkedIn</a></li>
-                    <li><a target="_blank" href="https://scholar.google.com/citations?user=zbMiZU8AAAAJ">Google Scholar</a></li>
+                <ul class="icon-links">
+                    <li><a target="_blank" href="https://github.com/jlefever"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.807 5.625-5.48 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg><span>GitHub</span></a></li>
+                    <li><a target="_blank" href="https://www.linkedin.com/in/jason-lefever/"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.07-.926-2.07-2.07 0-1.143.926-2.07 2.07-2.07 1.143 0 2.07.927 2.07 2.07 0 1.144-.927 2.07-2.07 2.07zM7.114 20.452H3.56V9h3.554v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg><span>LinkedIn</span></a></li>
+                    <li><a target="_blank" href="https://scholar.google.com/citations?user=zbMiZU8AAAAJ"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.246 14.978 9.5 12 9.5c-2.977 0-5.548 1.746-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg><span>Google Scholar</span></a></li>
                 </ul>
             </section>
-            <section>
+            <section id="publications">
                 <h2>Publications</h2>
-                <ul>
-                    <li><b>J. Lefever</b>, M. N. Mansur, M. Schäf, and W. Visser. <i>From Pricing Terms to Test Oracles: Predicate-Based Testing of Billing Systems.</i> Under review at the 34th ACM Symposium on the Foundations of Software Engineering (FSE '26). 2026.</li>
-                    <li><b>J. Lefever</b>, Y. Cai, R. Kazman, and E. Pisch. <i>ConcernBERT: Learning Responsibilities Using Class Membership.</i> Under review at IEEE Transactions on Software Engineering (TSE). 2026.</li>
-                    <li><b>J. Lefever</b>. <a target="_blank" href="https://doi.org/10.1109/ICSE-Companion66252.2025.00033"><i>Concern-Based Management of Software Design Complexity.</i></a> 2025 IEEE/ACM 47th International Conference on Software Engineering: Companion Proceedings (ICSE-Companion). ICSE '25. 2025.</li>
-                    <li><b>J. Lefever</b>, Y. Cai, R. Kazman, and E. Pisch. <a target="_blank"
+
+                <h3>2026</h3>
+                <ul class="pubs">
+                    <li class="pub"><b>J. Lefever</b>, Y. Cai, R. Kazman, and E. Pisch. <a target="_blank"
+                        href="https://ieeexplore.ieee.org/abstract/document/11581324"><i>ConcernBERT: Learning Responsibilities Using Class Membership.</i></a> IEEE Transactions on Software Engineering (TSE). 2026.
+                        <span class="pub-links"><a target="_blank" href="https://arxiv.org/pdf/2606.21647">[PDF]</a>
+                        <details class="bibtex"><summary>[Bibtex]</summary><pre>@article{Lefever2026ConcernBERT,
+  author       = {Lefever, Jason and Cai, Yuanfang and Kazman, Rick and Pisch, Ernst},
+  title        = {ConcernBERT: Learning Responsibilities Using Class Membership},
+  journal      = {IEEE Transactions on Software Engineering},
+  year         = {2026},
+  publisher    = {IEEE},
+  url          = {https://ieeexplore.ieee.org/abstract/document/11581324},
+  eprint       = {2606.21647},
+  archiveprefix = {arXiv},
+  primaryclass = {cs.SE}
+}</pre></details></span>
+                    </li>
+                    <li class="pub"><b>J. Lefever</b>, M. N. Mansur, J. Konstantinides, M. Schäf, and W. Visser. <a target="_blank"
+                        href="https://www.amazon.science/publications/why-is-this-on-my-bill-documentation-grounded-rule-learning-for-itemized-bill-explanation"><i>Why is
+                            This on My Bill? Documentation-Grounded Rule Learning for Itemized Bill Explanation.</i></a> 41st IEEE/ACM International Conference on Automated Software Engineering, Industry Showcase Track (ASE '26). 2026.
+                        <span class="pub-links"><a target="_blank" href="https://cdn.amazon.science/27/e2/acad0f2043cbb50fba47ececd6fd/scipub-approval152129-44074117-why-is-this-on-my-bill-documentationgrounded-rule-learning-for-itemized-bill-explanation.pdf">[PDF]</a>
+                        <details class="bibtex"><summary>[Bibtex]</summary><pre>@misc{Lefever2026Bill,
+  author       = {Lefever, Jason and Mansur, Muhammad Numair and Konstantinides, John and Sch{\"a}f, Martin and Visser, Willem},
+  title        = {Why is This on My Bill? Documentation-Grounded Rule Learning for Itemized Bill Explanation},
+  year         = {2026},
+  howpublished = {41st IEEE/ACM International Conference on Automated Software Engineering (ASE '26), Industry Showcase Track},
+  url          = {https://www.amazon.science/publications/why-is-this-on-my-bill-documentation-grounded-rule-learning-for-itemized-bill-explanation}
+}</pre></details></span>
+                    </li>
+                </ul>
+
+                <h3>2025</h3>
+                <ul class="pubs">
+                    <li class="pub"><b>J. Lefever</b>, Y. Cai, R. Kazman, and E. Pisch. <a target="_blank"
                         href="https://ieeexplore.ieee.org/abstract/document/10978935"><i>Deicide: Decomposing Complex Files Into
-                            Responsibility Modules.</i></a> 2025 IEEE 22nd International Conference on Software Architecture (ICSA). ICSA '25. 2025.</li>
-                    <li>H. Fang, Y. Cai, E. Tempero, R. Kazman, Y.-C. Tu, <b>J. Lefever</b>, and E. Pisch. <a target="_blank"
-                        href="https://doi.org/10.1109/TSE.2024.3522973"><i>A Holistic Approach to Design Understanding Through Concept Explanation.</i></a> IEEE Transactions on Software Engineering (TSE). 2025.</li>
-                    <li>E. Pisch, Y. Cai, R. Kazman, <b>J. Lefever</b>, and H. Fang. <a target="_blank"
-                            href="https://dl.acm.org/doi/10.1145/3674805.3686697"><i>M-score: An Empirically Derived
+                            Responsibility Modules.</i></a> 2025 IEEE 22nd International Conference on Software Architecture (ICSA). ICSA '25. 2025.&nbsp;<details class="bibtex"><summary>[Bibtex]</summary><pre>@inproceedings{Lefever2025Deicide,
+  author    = {Lefever, Jason and Cai, Yuanfang and Kazman, Rick and Pisch, Ernst},
+  title     = {Deicide: Decomposing Complex Files Into Responsibility Modules},
+  booktitle = {2025 IEEE 22nd International Conference on Software Architecture (ICSA)},
+  year      = {2025},
+  publisher = {IEEE},
+  url       = {https://ieeexplore.ieee.org/abstract/document/10978935}
+}</pre></details>
+                    </li>
+                    <li class="pub"><b>J. Lefever</b>. <a target="_blank" href="https://doi.org/10.1109/ICSE-Companion66252.2025.00033"><i>Concern-Based Management of Software Design Complexity.</i></a> 2025 IEEE/ACM 47th International Conference on Software Engineering: Companion Proceedings (ICSE-Companion). ICSE '25. 2025.&nbsp;<details class="bibtex"><summary>[Bibtex]</summary><pre>@inproceedings{Lefever2025Concern,
+  author    = {Lefever, Jason},
+  title     = {Concern-Based Management of Software Design Complexity},
+  booktitle = {2025 IEEE/ACM 47th International Conference on Software Engineering: Companion Proceedings (ICSE-Companion)},
+  year      = {2025},
+  publisher = {IEEE},
+  doi       = {10.1109/ICSE-Companion66252.2025.00033}
+}</pre></details>
+                    </li>
+                    <li class="pub">H. Fang, Y. Cai, E. Tempero, R. Kazman, Y.-C. Tu, <b>J. Lefever</b>, and E. Pisch. <a target="_blank"
+                        href="https://doi.org/10.1109/TSE.2024.3522973"><i>A Holistic Approach to Design Understanding Through Concept Explanation.</i></a> IEEE Transactions on Software Engineering (TSE). 2025.&nbsp;<details class="bibtex"><summary>[Bibtex]</summary><pre>@article{Fang2025Holistic,
+  author    = {Fang, Hongzhou and Cai, Yuanfang and Tempero, Ewan and Kazman, Rick and Tu, Yu-Cheng and Lefever, Jason and Pisch, Ernst},
+  title     = {A Holistic Approach to Design Understanding Through Concept Explanation},
+  journal   = {IEEE Transactions on Software Engineering},
+  year      = {2025},
+  publisher = {IEEE},
+  doi       = {10.1109/TSE.2024.3522973}
+}</pre></details>
+                    </li>
+                </ul>
+
+                <h3>2024</h3>
+                <ul class="pubs">
+                    <li class="pub">E. Pisch, Y. Cai, R. Kazman, <b>J. Lefever</b>, and H. Fang. <a target="_blank"
+                            href="https://doi.org/10.1145/3674805.3686697"><i>M-score: An Empirically Derived
                                 Software Modularity Metric.</i></a> Proceedings of the 18th ACM/IEEE International
-                        Symposium on Empirical Software Engineering and Measurement. ESEM '24. 2024.</li>
-                    <li>A. Liu, <b>J. Lefever</b>, Y. Han, and Y. Cai. <a target="_blank"
-                            href="https://dl.acm.org/doi/10.1016/j.infsof.2024.107429"><i>Prevalence and Severity of
+                        Symposium on Empirical Software Engineering and Measurement. ESEM '24. 2024.&nbsp;<details class="bibtex"><summary>[Bibtex]</summary><pre>@inproceedings{Pisch2024Mscore,
+  author    = {Pisch, Ernst and Cai, Yuanfang and Kazman, Rick and Lefever, Jason and Fang, Hongzhou},
+  title     = {M-score: An Empirically Derived Software Modularity Metric},
+  booktitle = {Proceedings of the 18th ACM/IEEE International Symposium on Empirical Software Engineering and Measurement (ESEM '24)},
+  year      = {2024},
+  publisher = {ACM},
+  doi       = {10.1145/3674805.3686697}
+}</pre></details>
+                    </li>
+                    <li class="pub">A. Liu, <b>J. Lefever</b>, Y. Han, and Y. Cai. <a target="_blank"
+                            href="https://doi.org/10.1016/j.infsof.2024.107429"><i>Prevalence and Severity of
                                 Design Anti-Patterns in Open Source Programs &mdash; A Large-Scale Study.</i></a> Information
-                        and Software Technology 170. 2024.</li>
-                    <li><b>J. Lefever</b>, Y. Cai, R. Kazman, and H. Fang. <a target="_blank"
+                        and Software Technology 170. 2024.&nbsp;<details class="bibtex"><summary>[Bibtex]</summary><pre>@article{Liu2024Prevalence,
+  author    = {Liu, Alan and Lefever, Jason and Han, Yi and Cai, Yuanfang},
+  title     = {Prevalence and Severity of Design Anti-Patterns in Open Source Programs --- A Large-Scale Study},
+  journal   = {Information and Software Technology},
+  volume    = {170},
+  year      = {2024},
+  publisher = {Elsevier},
+  doi       = {10.1016/j.infsof.2024.107429}
+}</pre></details>
+                    </li>
+                </ul>
+
+                <h3>2023</h3>
+                <ul class="pubs">
+                    <li class="pub"><b>J. Lefever</b>, Y. Cai, R. Kazman, and H. Fang. <a target="_blank"
                             href="https://www.computer.org/csdl/proceedings-article/icsa-c/2023/645900a126/1MBDfvCze8M"><i>Towards
                                 the Assisted Decomposition of
                                 Large-Active Files.</i></a> 2023 IEEE 20th International Conference on Software
-                        Architecture Companion (ICSA-C). ICSA '23. 2023.</li>
-                    <li>H. Fang, Y. Cai, R. Kazman, and <b>J. Lefever</b>. <a target="_blank"
+                        Architecture Companion (ICSA-C). ICSA '23. 2023.
+                        <span class="pub-links"><a target="_blank" href="https://arxiv.org/pdf/2302.09153">[PDF]</a>
+                        <details class="bibtex"><summary>[Bibtex]</summary><pre>@inproceedings{Lefever2023Towards,
+  author       = {Lefever, Jason and Cai, Yuanfang and Kazman, Rick and Fang, Hongzhou},
+  title        = {Towards the Assisted Decomposition of Large-Active Files},
+  booktitle    = {2023 IEEE 20th International Conference on Software Architecture Companion (ICSA-C)},
+  year         = {2023},
+  publisher    = {IEEE},
+  url          = {https://www.computer.org/csdl/proceedings-article/icsa-c/2023/645900a126/1MBDfvCze8M},
+  eprint       = {2302.09153},
+  archiveprefix = {arXiv},
+  primaryclass = {cs.SE}
+}</pre></details></span>
+                    </li>
+                    <li class="pub">H. Fang, Y. Cai, R. Kazman, and <b>J. Lefever</b>. <a target="_blank"
                             href="https://ieeexplore.ieee.org/document/10092708"><i>Identifying Anti-Patterns in
                                 Distributed Systems With Heterogeneous Dependencies.</i></a> 2023 IEEE 20th International Conference
-                        on Software Architecture Companion (ICSA-C). ICSA '23. 2023.</li>
-                    <li>H. Fang, Y. Cai, R. Kazman, and <b>J. Lefever</b>. <a target="_blank"
+                        on Software Architecture Companion (ICSA-C). ICSA '23. 2023.&nbsp;<details class="bibtex"><summary>[Bibtex]</summary><pre>@inproceedings{Fang2023Identifying,
+  author    = {Fang, Hongzhou and Cai, Yuanfang and Kazman, Rick and Lefever, Jason},
+  title     = {Identifying Anti-Patterns in Distributed Systems With Heterogeneous Dependencies},
+  booktitle = {2023 IEEE 20th International Conference on Software Architecture Companion (ICSA-C)},
+  year      = {2023},
+  publisher = {IEEE},
+  url       = {https://ieeexplore.ieee.org/document/10092708}
+}</pre></details>
+                    </li>
+                </ul>
+
+                <h3>2022</h3>
+                <ul class="pubs">
+                    <li class="pub">H. Fang, Y. Cai, R. Kazman, and <b>J. Lefever</b>. <a target="_blank"
                             href="https://dl.acm.org/doi/10.1145/3510454.3516861"><i>CIDER: Concept-based Interactive
                                 Design Recovery.</i></a> Proceedings of the ACM/IEEE 44th International Conference on Software
-                        Engineering: Companion Proceedings (ICSE-Companion). ICSE '22. 2022.</li>
-                    <li><b>J. Lefever</b>, Y. Cai, H. Cervantes, R. Kazman, and H. Fang. <a target="_blank"
+                        Engineering: Companion Proceedings (ICSE-Companion). ICSE '22. 2022.
+                        <span class="pub-links"><a target="_blank" href="https://par.nsf.gov/servlets/purl/10359522">[PDF]</a>
+                        <details class="bibtex"><summary>[Bibtex]</summary><pre>@inproceedings{Fang2022CIDER,
+  author    = {Fang, Hongzhou and Cai, Yuanfang and Kazman, Rick and Lefever, Jason},
+  title     = {CIDER: Concept-based Interactive Design Recovery},
+  booktitle = {Proceedings of the ACM/IEEE 44th International Conference on Software Engineering: Companion Proceedings (ICSE-Companion)},
+  year      = {2022},
+  publisher = {ACM},
+  doi       = {10.1145/3510454.3516861},
+  url       = {https://par.nsf.gov/servlets/purl/10359522}
+}</pre></details></span>
+                    </li>
+                </ul>
+
+                <h3>2021</h3>
+                <ul class="pubs">
+                    <li class="pub"><b>J. Lefever</b>, Y. Cai, H. Cervantes, R. Kazman, and H. Fang. <a target="_blank"
                             href="https://arxiv.org/pdf/2103.04506"><i>On the Lack of Consensus
                                 Among Technical Debt Detection Tools.</i></a> 2021 IEEE/ACM 43rd International
-                        Conference on Software Engineering: Software Engineering in Practice (ICSE-SEIP). ICSE '21. 2021.</li>
-                    <li>T. W. Price, D. Hovemeyer, K. Rivers, A. C. Bart, A. Petersen, B. A. Becker, and <b>J. Lefever</b>.
+                        Conference on Software Engineering: Software Engineering in Practice (ICSE-SEIP). ICSE '21. 2021.&nbsp;<details class="bibtex"><summary>[Bibtex]</summary><pre>@inproceedings{Lefever2021Lack,
+  author       = {Lefever, Jason and Cai, Yuanfang and Cervantes, Humberto and Kazman, Rick and Fang, Hongzhou},
+  title        = {On the Lack of Consensus Among Technical Debt Detection Tools},
+  booktitle    = {2021 IEEE/ACM 43rd International Conference on Software Engineering: Software Engineering in Practice (ICSE-SEIP)},
+  year         = {2021},
+  publisher    = {IEEE},
+  url          = {https://arxiv.org/abs/2103.04506},
+  eprint       = {2103.04506},
+  archiveprefix = {arXiv},
+  primaryclass = {cs.SE}
+}</pre></details>
+                    </li>
+                </ul>
+
+                <h3>2019</h3>
+                <ul class="pubs">
+                    <li class="pub">T. W. Price, D. Hovemeyer, K. Rivers, A. C. Bart, A. Petersen, B. A. Becker, and <b>J. Lefever</b>.
                         <a target="_blank"
                             href="https://isnap.csc.ncsu.edu/home/public/publication/price-2019-csedm-ps/"><i>Progsnap
                                 2: A Flexible Format for Programming Process Data.</i></a> Proceedings of the
                         Educational Data Mining in Computer Science Workshop in the Companion Proceedings of the
-                        International Conference on Learning Analytics and Knowledge. EDM '19. 2019.
+                        International Conference on Learning Analytics and Knowledge. EDM '19. 2019.&nbsp;<details class="bibtex"><summary>[Bibtex]</summary><pre>@inproceedings{Price2019Progsnap2,
+  author    = {Price, Thomas W. and Hovemeyer, David and Rivers, Kelly and Bart, Austin C. and Petersen, Andrew and Becker, Brett A. and Lefever, Jason},
+  title     = {ProgSnap2: A Flexible Format for Programming Process Data},
+  booktitle = {Companion Proceedings of the International Conference on Learning Analytics and Knowledge (Educational Data Mining in Computer Science Workshop)},
+  year      = {2019},
+  url       = {https://isnap.csc.ncsu.edu/home/public/publication/price-2019-csedm-ps/}
+}</pre></details>
                     </li>
                 </ul>
             </section>
@@ -78,8 +222,11 @@
         </article>
     </main>
     <footer>
-        Credit to <a target="_blank" href="https://github.com/igoradamenko/awsm.css">awsm.css</a> for the CSS.
+        <p>&copy; <span id="year">2026</span> Jason Lefever</p>
     </footer>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 
 </html>
